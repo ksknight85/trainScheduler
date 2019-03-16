@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>train Schedule</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+
+    <!-- Moment.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="mainWindow">
+        <table class="trains">
+            <thead>
+                <h1>Train Schedule</h1>
+            </thead>
+            <tr>
+                <th class="topRow" scope="col">Train Name</th>
+                <th class="topRow" scope="col">Destination</th>
+                <th class="topRow" scope="col">Frequency (min)</th>
+                <th class="topRow" scope="col">Next Arrival</th>
+                <th class="topRow" scope="col">Minutes Away</th>
+            </tr>
+        </table>
+
+        <form class="employeeInfo">
+            <div class="form-group">
+                <label for="trainName">Train Name</label>
+                <input type="text" class="form-control" id="trainName" placeholder="Pineapple Express">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="Omaha, NE">
+            </div>
+            <div class="form-group">
+                <label for="startTime">First Trian Time (HH:MM - military time)</label>
+                <input type="text" class="form-control" id="startTime" placeholder="03:30">
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="number" class="form-control" id="frequency">
+            </div>
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+
+            </select>
+        </form>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="./assets/javascript/script.js"></script>
+
+</body>
+
+</html>
